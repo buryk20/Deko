@@ -4,22 +4,22 @@
   src: url("../fonts/HelveticaNeueCyr-Roman.ttf");
 }
 
-.head-text {
+.head-text, .phone-wrp, .text-bun-main > h1, .btn-bun, .categories-wrp > p, .power-tools > p, .text-inform-pos {
   color: #ffffff;
   font-family: "HelveticaNeueCyr", Arial, Helvetica, sans-serif;
 }
 
-.head-text > h2 {
+.head-text > a {
   font-weight: 500;
 }
 
-.head-wrp, .head-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.head-wrp, .head-text, .categories-pos {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+}
+
+.head-wrp, .text-bun-main, .btn-bun-wrp, .categories-wrp, .line-inform {
+  margin: 0 auto;
 }
 
 html,
@@ -45,8 +45,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 0 none;
   background-color: transparent;
   scroll-behavior: smooth;
@@ -125,7 +124,6 @@ select {
 input,
 textarea {
   outline: none;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -136,52 +134,157 @@ label {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 
 .main-bun-wrp {
+  height: 950px;
   background-image: url("../img/main-bun.png");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .head-line {
   width: 100%;
   height: 28px;
-  background-color: #FFA300;
+  background-color: #ffa300;
 }
 
 .head-wrp {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 94px;
   padding-top: 30px;
+  align-items: center;
 }
 
 .head-text {
   max-width: 618px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.head-text > h2 {
+.head-text > a {
   font-size: 18px;
   cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ffa30000;
+  transition: 1s;
 }
 
-.head-text > h2:hover {
-  text-decoration: underline;
-  -webkit-transition: -webkit-text-decoration 1s ease-out 0.5s;
-  transition: -webkit-text-decoration 1s ease-out 0.5s;
-  transition: text-decoration 1s ease-out 0.5s;
-  transition: text-decoration 1s ease-out 0.5s, -webkit-text-decoration 1s ease-out 0.5s;
+.head-text > a:hover {
+  color: #ffa300;
+  border-bottom: 1px solid #ffa300;
 }
-/*# sourceMappingURL=main.css.map */
+
+.phone-wrp {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid #ffffff;
+  background: #00000080;
+}
+
+.text-bun-main {
+  max-width: 717px;
+  margin-bottom: 40px;
+}
+
+.text-bun-main > h1 {
+  font-size: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.btn-bun {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffa300;
+  border: 1px solid #ffa300;
+  background: #000000cc;
+}
+
+.btn-bun-wrp {
+  text-align: center;
+}
+
+.main-wrp {
+  padding-top: 80px;
+  background-color: #262626;
+}
+
+.categories-wrp {
+  max-width: 1440px;
+}
+
+.categories-wrp > p {
+  margin-bottom: 40px;
+  color: #ffa300;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.power-tools {
+  width: 348px;
+  height: 232px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.power-tools > p {
+  width: 80%;
+  position: absolute;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #00000080;
+  text-align: center;
+}
+
+.categories-pos {
+  margin-bottom: 80px;
+}
+
+.line-inform {
+  width: 300px;
+  margin-bottom: 37px;
+  border-top: 1px solid #ffffff;
+}
+
+.text-inform {
+  margin-bottom: 28px;
+}
+
+.inform-wrp {
+  display: flex;
+}
+
+.text-inform-pos {
+  max-width: 423px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-inform-pos > h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffa300;
+}
+
+.text-inform-pos > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.text-inform-wrp {
+  padding-left: 63px;
+}

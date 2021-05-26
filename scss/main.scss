@@ -2,8 +2,10 @@
 @import "_normalize.scss";
 
 .main-bun-wrp {
-  background-image: url('../img/main-bun.png');
+  height: 950px;
+  background-image: url("../img/main-bun.png");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .head-line {
@@ -15,9 +17,11 @@
 .head-wrp {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  @extend %marg-center;
+  margin-bottom: 94px;
   padding-top: 30px;
   @extend %pos-flex-betw;
+  align-items: center;
 }
 
 .head-text {
@@ -28,19 +32,135 @@
   @extend %textMain;
 }
 
-.head-text > h2 {
+.head-text > a {
   @extend %textBold;
   font-size: 18px;
   cursor: pointer;
-  
+  box-sizing: border-box;
+  border-bottom: 1px solid #ffa30000;
+  transition: 1s;
 }
 
-.head-text > h2:hover {
-  text-decoration: underline;
-  transition: text-decoration 1s ease-out 0.5s;
-  
+.head-text > a:hover {
+  color: $mainColor;
+  border-bottom: 1px solid $mainColor;
 }
 
 .phone-wrp {
+  @extend %textMain;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid $colorText;
+  background: #00000080;
+}
 
+.text-bun-main {
+  @extend %marg-center;
+  max-width: 717px;
+  margin-bottom: 40px;
+}
+
+.text-bun-main > h1 {
+  @extend %textMain;
+  font-size: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.btn-bun {
+  @extend %textMain;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  background: #000000cc;
+}
+
+.btn-bun-wrp {
+  @extend %marg-center;
+  text-align: center;
+}
+
+.main-wrp {
+  padding-top: 80px;
+  background-color: $backColor;
+}
+
+.categories-wrp {
+  @extend %marg-center;
+  max-width: 1440px;
+}
+
+.categories-wrp > p {
+  @extend %textMain;
+  margin-bottom: 40px;
+  color: $mainColor;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.power-tools {
+  width: 348px;
+  height: 232px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.power-tools > p {
+  width: 80%;
+  position: absolute;
+  @extend %textMain;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #00000080;
+  text-align: center;
+}
+
+.categories-pos {
+  @extend %pos-flex-betw;
+  margin-bottom: 80px;
+}
+
+.line-inform {
+  width: 300px;
+  margin-bottom: 37px;
+  @extend %marg-center;
+  border-top: 1px solid $colorText;
+}
+
+.text-inform {
+  margin-bottom: 28px;
+}
+
+.inform-wrp {
+  display: flex;
+}
+
+.text-inform-pos {
+  max-width: 423px;
+  width: 100%;
+  text-align: center;
+  @extend %textMain;
+}
+
+.text-inform-pos > h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: $mainColor;
+}
+
+.text-inform-pos > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.text-inform-wrp {
+  padding-left: 63px;
 }
