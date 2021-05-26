@@ -1,0 +1,46 @@
+@import "_variable_deko.scss";
+@import "_normalize.scss";
+
+.main-bun-wrp {
+  background-image: url('../img/main-bun.png');
+  background-size: 100%;
+}
+
+.head-line {
+  width: 100%;
+  height: 28px;
+  background-color: $mainColor;
+}
+
+.head-wrp {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  @extend %pos-flex-betw;
+}
+
+.head-text {
+  max-width: 618px;
+  width: 100%;
+  display: flex;
+  @extend %pos-flex-betw;
+  @extend %textMain;
+}
+
+.head-text > h2 {
+  @extend %textBold;
+  font-size: 18px;
+  cursor: pointer;
+  
+}
+
+.head-text > h2:hover {
+  text-decoration: underline;
+  transition: text-decoration 1s ease-out 0.5s;
+  
+}
+
+.phone-wrp {
+
+}

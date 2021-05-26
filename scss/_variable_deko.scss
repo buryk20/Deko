@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url('../fonts/HelveticaNeueCyr-Roman.ttf');
+}
+
+$mainFont: "HelveticaNeueCyr", Arial, Helvetica, sans-serif;
+$mainColor: #FFA300;
+$backColor: #262626;
+$colorText: #ffffff;
+
+%textMain {
+    color: $colorText;
+    font-family: $mainFont;
+}
+
+%textBold {
+    font-weight: 500;
+}
+
+%pos-flex-betw {
+    display: flex;
+    justify-content: space-between;
+}
