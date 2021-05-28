@@ -70,18 +70,17 @@
 }
 
 .btn-bun {
-  @extend %textMain;
-  padding: 20px;
+  @extend %btn-main;
   font-weight: 700;
   font-size: 36px;
-  color: $mainColor;
-  border: 1px solid $mainColor;
-  background: #000000cc;
+}
+
+.btn-bun:hover {
+  @extend %btn-main-hov;
 }
 
 .btn-bun-wrp {
-  @extend %marg-center;
-  text-align: center;
+  @extend %btn-bun-wrp;
 }
 
 .main-wrp {
@@ -94,12 +93,22 @@
   max-width: 1440px;
 }
 
+.btn-inform-wrp {
+  padding-top: 38px;
+  @extend %btn-bun-wrp;
+}
+
+.btn-inform {
+  @extend %btn-main;
+  font-size: 18px;
+}
+
+.btn-inform:hover {
+  @extend %btn-main-hov;
+}
+
 .categories-wrp > p {
-  @extend %textMain;
-  margin-bottom: 40px;
-  color: $mainColor;
-  font-size: 36px;
-  font-weight: 700;
+  @extend %textRubric;
 }
 
 .power-tools {
@@ -137,10 +146,13 @@
 
 .text-inform {
   margin-bottom: 28px;
+  padding-top: 80px;
 }
 
 .inform-wrp {
+  margin-bottom: 80px;
   display: flex;
+  background: #131313;
 }
 
 .text-inform-pos {
@@ -163,4 +175,120 @@
 
 .text-inform-wrp {
   padding-left: 63px;
+}
+
+.partner-wrp {
+  max-width: 1440px;
+  margin-bottom: 60px;
+  @extend %marg-center;
+}
+
+.partner-wrp > p {
+  @extend %textRubric;
+}
+
+.partner-link {
+  width: 352px;
+  height: 237px;
+  @extend %pos-flex-betw;
+  background-color: $colorText;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-pos {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-text-main {
+  width: 170px;
+  padding-top: 45px;
+  margin-bottom: 45px;
+  @extend %textMain;
+  font-size: 36px;
+  font-weight: 700;
+  color: $mainColor;
+}
+
+.input-wrp {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/back-input.png");
+  background-repeat: no-repeat;
+}
+
+.input-pos {
+  max-width: 605px;
+  width: 100%;
+  padding-left: 65px;
+  background: #131313;
+}
+
+.input-style {
+  max-width: 472px;
+  width: 100%;
+  padding: 21px 27px;
+  margin-bottom: 40px;
+  border: 1px solid $mainColor;
+  color: $colorText;
+  @extend %textMain;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #9c9c9c;
+  font-size: 18px;
+  @extend %textMain;
+}
+
+.input-btn {
+  display: flex;
+  margin-bottom: 30px;
+  @extend %btn-main;
+  font-size: 18px;
+  color: #000000cc;
+  background-color: $mainColor;
+  border: 1px solid #000000cc;
+  transition: 1s;
+}
+
+.input-btn:hover {
+  background: #000000cc;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+}
+
+.text-input {
+  margin-bottom: 53px;
+  color: #9c9c9c;
+  font-size: 18px;
+  @extend %textMain;
+}
+
+.input-pos-wrp {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foot-wrp {
+  background-color: #262626;
+}
+
+.foot-text > a {
+  @extend %textBold;
+  @extend %textMain;
+  font-size: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ffa30000;
+  transition: 1s;
+}
+
+.foot-text > a:hover {
+  color: $mainColor;
+  border-bottom: 1px solid $mainColor;
 }

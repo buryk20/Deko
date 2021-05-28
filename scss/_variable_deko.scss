@@ -25,3 +25,31 @@ $colorText: #ffffff;
 %marg-center {
   margin: 0 auto;
 }
+
+%btn-bun-wrp {
+  @extend %marg-center;
+  text-align: center;
+}
+
+%btn-main {
+  @extend %textMain;
+  padding: 20px;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  background: #000000cc;
+  transition: 1s;
+}
+
+%btn-main-hov {
+  color: #000000cc;
+  background-color: $mainColor;
+  border: 1px solid #000000cc;
+}
+
+%textRubric {
+  @extend %textMain;
+  margin-bottom: 40px;
+  color: $mainColor;
+  font-size: 36px;
+  font-weight: 700;
+}
