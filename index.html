@@ -24,15 +24,17 @@
     <div class="main-bun-wrp">
       <div class="head-line"></div>
       <header class="head-wrp">
-        <img src="icon/logo_deko.png" alt="Логотип Deko" />
+        <a class="head-phone-mob" href="tel:380680000000"><img src="icon/phone_icon.svg" alt="Телефон"></a> 
+        <img  src="icon/logo_deko.png" alt="Логотип Deko" />
+        <img class="icon-menu-mob" src="icon/menu_icon.svg" alt="Меню">
         <div class="head-text transition">
-          <a href="#">Где купить?</a>
-          <a href="#">Категории</a>
-          <a href="#">О нас</a>
-          <a href="#">Сотрудничество</a>
+          <a href="#buy">Где купить?</a>
+          <a href="#categories">Категории</a>
+          <a href="#about_us">О нас</a>
+          <a href="#cooperation">Сотрудничество</a>
         </div>
         <div class="phone-wrp">
-          <a href="tel:380680000000<">+38 068 00 00 000</a>
+          <a href="tel:380680000000">+38 068 00 00 000</a>
         </div>
       </header>
       <div class="text-bun-main">
@@ -42,42 +44,48 @@
         </h1>
       </div>
       <div class="btn-bun-wrp">
-        <button class="btn-bun"><a href="">Купить</a></button>
+        <button class="btn-bun"><a href="#buy">Купить</a></button>
       </div>
     </div>
     <main class="main-wrp">
-      <div class="categories-wrp">
+      <div class="categories-wrp"><a name="categories" ></a>
         <p>Категории</p>
         <div class="categories-pos">
           <div class="power-tools">
-            <img src="img/power_tools.png" alt="Электроинструменты" />
+            <img class="power-img" src="img/power_tools.png" alt="Электроинструменты" />
+            <img class="power-img-mob" src="img/power_tools_mob.png" alt="Электроинструменты">
             <p>Электроинструменты</p>
           </div>
           <div class="power-tools">
-            <img src="img/kits_tools.png" alt="Наборы инструментов" />
+            <img class="power-img" src="img/kits_tools.png" alt="Наборы инструментов" />
+            <img class="power-img-mob" src="img/kits_tools_mob.png" alt="Наборы инструментов">
             <p>Наборы инструментов</p>
           </div>
           <div class="power-tools">
-            <img
+            <img class="power-img"
               src="img/measuring_instruments.png"
               alt="Измерительные инструменты"
             />
+            <img class="power-img-mob" src="img/measuring_instruments_mob.png" alt="Измерительные инструменты">
             <p>Измерительные инструменты</p>
           </div>
           <div class="power-tools">
-            <img src="img/welding_tools.png" alt="Сварочные инструменты" />
+            <img class="power-img" src="img/welding_tools.png" alt="Сварочные инструменты" />
+            <img class="power-img-mob" src="img/power_tools_mob.png" alt="Электроинструменты">
             <p>Сварочные инструменты</p>
           </div>
         </div>
       </div>
       <div>
         <div class="inform-wrp">
-          <img
+          <div class="inform-img"></div>
+          <!-- <img
+            class="inform-img"
             src="img/information_about_company.png"
             alt="Информация о компании"
-          />
+          /> -->
           <div class="text-inform-wrp">
-            <div class="text-inform-pos">
+            <div class="text-inform-pos"><a name="about_us"></a>
               <h3 class="text-inform">Кто мы?</h3>
               <div class="line-inform"></div>
               <p>DEKO - масштабный производитель и глобальный поставщик бытовых инструментов и ремонтного оборудования, предлагающий экономичные продукты с модным дизайном и технологиями для клиентов по всему миру.</p>
@@ -88,27 +96,36 @@
             </div>  
           </div>
         </div>
-        <div class="partner-wrp">
+        <div class="partner-wrp"><a name="buy"></a>
           <p>Где купить</p>
           <div class="partner-pos">
             <div class="partner-link">
-              <a href=""><img  src="icon/logo_rozetka.png" alt="Розетка"></a>
+              <a href="">
+                <img class="part-img" src="icon/logo_rozetka.png" alt="Розетка">
+                <img class="part-img-mob" src="icon/logo_rozetka_mob.png" alt="Розетка">
+              </a>
             </div>
             <div class="partner-link">
-              <a href=""><img  src="icon/logo_hub.png" alt="Интернет магазин LogicHub"></a>
+              <a href="">
+                <img class="part-img" src="icon/Logic Hub.svg" alt="Интернет магазин LogicHub">
+                <img class="part-img-mob" src="icon/Logic Hub.svg" alt="LogicHub">
+              </a>
             </div>
             <div class="partner-link">
-              <a href=""><img  src="icon/logo_epik.png" alt="Эпицентр"></a>
+              <a href="">
+                <img class="part-img" src="icon/logo_epik.png" alt="Эпицентр">
+                <img class="part-img-mob" src="icon/logo_epik_mob.png" alt="Епіцентр">
+              </a>
             </div>
           </div>
           <div class="btn-inform-wrp">
                 <button class="btn-inform"><a href="">Скачать прайс-лист</a></button>
               </div> 
         </div>
-        <div class="input-wrp">
+        <div class="input-wrp"><a name="cooperation"></a>
           <div class="input-pos-wrp">
             <div class="input-pos">
-              <form name="Deko" method="POST" action = "#" >
+              <form class="input-form-wrp" name="Deko" method="POST" action = "#" >
                 <p class="input-text-main">Заявка на сотрудничество</p>
                 <input type="text" placeholder="Имя" class="input-style">
                 <input type="tel" placeholder="+38 __ ___ ___" class="input-style">
@@ -121,12 +138,17 @@
         </div>
     </main>
     <footer class="foot-wrp">
-      <div>
+      <div class="foot-pos">
         <div class="foot-text">
-          <a href="#">Где купить?</a>
-          <a href="#">Категории</a>
-          <a href="#">О нас</a>
-          <a href="#">Сотрудничество</a>
+          <a href="#buy">Где купить?</a>
+          <a href="#categories">Категории</a>
+          <a href="#about_us">О нас</a>
+          <a href="#cooperation">Сотрудничество</a>
+        </div>
+        <img class="foot-logo" src="icon/logo_deko.png" alt="Логотип Deko">
+        <div class="foot-wrp-icon">
+          <a class="foot-icon-link" href="#"><img src="icon/icon-fb.svg" alt="facebook"></a>
+          <a href="#"><img src="icon/icon-ins.svg" alt="instogram"></a>
         </div>
       </div>
     </footer>
