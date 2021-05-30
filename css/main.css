@@ -727,16 +727,6 @@ input::placeholder {
   .foot-pos {
     padding-top: 44px;
   }
-  .power-img {
-    display: none;
-  }
-  .power-img-mob {
-    display: flex;
-  }
-  .power-tools {
-    width: 175px;
-    height: 138px;
-  }
   .power-tools > p {
     width: 93%;
     font-size: 14px;

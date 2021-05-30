@@ -7,7 +7,7 @@ document.getElementById('menu').onclick = function () {
             document.getElementsByClassName('head-nav-mob')[0].style.display = 'none';
 
         }
-        setTimeout(sayTime, 1000);
+        setTimeout(sayTime, 500);
         document.getElementsByClassName('head-nav-mob')[0].style.right = '-380px';
 
 
