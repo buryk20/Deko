@@ -12,8 +12,8 @@ body {
 }
 
 .menu-btn {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: block;
   position: relative;
 }
@@ -56,11 +56,11 @@ body {
 }
 
 .menu-btn_active span::before {
-  transform: rotate(35deg);
+  transform: rotate(45deg);
 }
 
 .menu-btn_active span::after {
-  transform: rotate(-35deg);
+  transform: rotate(-45deg);
 }
 
 .main-bun-wrp {
@@ -333,6 +333,7 @@ body {
   color: $colorText;
   @extend %textMain;
   font-size: 18px;
+  border-radius: 0;
 }
 
 input::placeholder {
@@ -350,6 +351,7 @@ input::placeholder {
   background-color: $mainColor;
   border: 1px solid #000000cc;
   transition: 1s;
+  border-radius: 0;
 }
 
 .input-btn:hover {
@@ -484,13 +486,22 @@ input::placeholder {
 
 @media (max-width: 1440px) {
   .power-tools + .power-tools {
-    margin-left: 6px;
+    margin-left: 10px;
   }
 }
 
-@media (max-width: 1426px) {
+@media (max-width: 1429px) {
+  .categories-pos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .power-tools + .power-tools {
+    // margin-left: 0;
+  }
+
   .partner-wrp {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .partner-pos {
@@ -499,17 +510,15 @@ input::placeholder {
   }
 
   .power-tools {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .power-tools + .power-tools {
     margin-left: 0;
   }
+}
 
-  .categories-pos {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+@media (max-width: 1426px) {
 }
 
 @media (max-width: 1040px) {
@@ -652,8 +661,8 @@ input::placeholder {
 
   .power-tools > p {
     width: 93%;
-    font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1.4px;
   }
 
   .categories-wrp > p {
