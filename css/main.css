@@ -416,7 +416,6 @@ body {
   font-size: 48px;
   text-align: center;
   line-height: 48px;
-  letter-spacing: 1.2px;
 }
 
 .btn-bun {
@@ -926,7 +925,6 @@ input::placeholder {
   .power-tools > p {
     width: 93%;
     font-weight: 600;
-    letter-spacing: 1.4px;
   }
   .categories-wrp > p {
     margin-bottom: 18px;
