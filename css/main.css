@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 @font-face {
   font-family: "HelveticaNeueCyr";
@@ -24,33 +31,65 @@ input::-ms-input-placeholder {
   font-family: "HelveticaNeueCyr", Arial, Helvetica, sans-serif;
 }
 
-.btn-bun, .btn-inform, .input-btn, .categories-wrp > p, .partner-wrp > p, .head-text, .head-nav-mob, .phone-wrp, .text-bun-main > h1, .power-tools > p, .text-inform-pos, .input-text-main, .input-style, input::placeholder, .text-input, .foot-text > a {
+.btn-bun,
+.btn-inform,
+.input-btn,
+.categories-wrp > p,
+.partner-wrp > p,
+.head-text,
+.head-nav-mob,
+.phone-wrp,
+.text-bun-main > h1,
+.power-tools > p,
+.text-inform-pos,
+.input-text-main,
+.input-style,
+input::placeholder,
+.text-input,
+.foot-text > a {
   color: #ffffff;
   font-family: "HelveticaNeueCyr", Arial, Helvetica, sans-serif;
 }
 
-.head-text > a, .foot-text > a {
+.head-text > a,
+.foot-text > a {
   font-weight: 500;
 }
 
-.head-wrp, .head-text, .categories-pos, .partner-link {
+.head-wrp,
+.head-text,
+.categories-pos,
+.partner-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.btn-bun-wrp, .btn-inform-wrp, .foot-text, .foot-logo, .head-wrp, .text-bun-main, .categories-wrp, .line-inform, .partner-wrp {
+.btn-bun-wrp,
+.btn-inform-wrp,
+.foot-text,
+.foot-logo,
+.head-wrp,
+.text-bun-main,
+.categories-wrp,
+.line-inform,
+.partner-wrp {
   margin: 0 auto;
 }
 
-.btn-bun-wrp, .btn-inform-wrp, .foot-text, .foot-logo {
+.btn-bun-wrp,
+.btn-inform-wrp,
+.foot-text,
+.foot-logo {
   text-align: center;
 }
 
-.btn-bun, .btn-inform, .input-btn {
+.btn-bun,
+.btn-inform,
+.input-btn {
   padding: 20px;
   color: #ffa300;
   border: 1px solid #ffa300;
@@ -60,13 +99,15 @@ input::-ms-input-placeholder {
   transition: 1s;
 }
 
-.btn-bun:hover, .btn-inform:hover {
+.btn-bun:hover,
+.btn-inform:hover {
   color: #000000cc;
   background-color: #ffa300;
   border: 1px solid #000000cc;
 }
 
-.categories-wrp > p, .partner-wrp > p {
+.categories-wrp > p,
+.partner-wrp > p {
   margin-bottom: 40px;
   color: #ffa300;
   font-size: 36px;
@@ -101,7 +142,7 @@ body {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 0 none;
   background-color: transparent;
   scroll-behavior: smooth;
@@ -156,7 +197,7 @@ a {
 
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   cursor: pointer;
 }
 
@@ -194,12 +235,12 @@ label {
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
-         -o-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    -o-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -254,26 +295,26 @@ body {
 
 .menu-btn span::before {
   -webkit-transform: translateY(-9px);
-      -ms-transform: translateY(-9px);
-          transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
 }
 
 .menu-btn span::after {
   -webkit-transform: translateY(3px);
-      -ms-transform: translateY(3px);
-          transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .menu-btn_active span::before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .menu-btn_active span::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .main-bun-wrp {
@@ -299,8 +340,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .head-text {
@@ -323,8 +364,8 @@ body {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #000000;
   -webkit-transition: all 0.3s ease 0.3s;
   -o-transition: all 0.3s ease 0.3s;
@@ -341,7 +382,7 @@ body {
   font-size: 18px;
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 1px solid #ffa30000;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -359,8 +400,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 24px;
   border: 1px solid #ffffff;
   background: #00000080;
@@ -408,11 +449,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-repeat: no-repeat;
 }
 
@@ -483,11 +524,11 @@ body {
   height: 237px;
   background-color: #ffffff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .partner-link + .partner-link {
@@ -500,7 +541,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .input-text-main {
@@ -517,8 +558,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-image: url("../img/back-input.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,8 +643,8 @@ input::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .foot-wrp {
@@ -618,15 +659,15 @@ input::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .foot-text > a {
   font-size: 24px;
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 1px solid #ffa30000;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -652,8 +693,8 @@ input::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .foot-icon-link {
@@ -702,14 +743,14 @@ input::placeholder {
 
 .trans {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .trans-l {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 1500px) {
@@ -722,7 +763,7 @@ input::placeholder {
   .categories-pos {
     padding: 0 4px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -735,9 +776,9 @@ input::placeholder {
 @media (max-width: 1429px) {
   .categories-pos {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .partner-wrp {
     margin-bottom: 10px;
@@ -788,8 +829,8 @@ input::placeholder {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .inform-img {
     display: none;
@@ -816,9 +857,23 @@ input::placeholder {
     max-width: none;
     padding-left: 0;
     margin: 0 auto;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(19, 19, 19, 0.8)), to(rgba(19, 19, 19, 0.8)));
-    background: -o-linear-gradient(bottom, rgba(19, 19, 19, 0.8), rgba(19, 19, 19, 0.8));
-    background: linear-gradient(0deg, rgba(19, 19, 19, 0.8), rgba(19, 19, 19, 0.8));
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(19, 19, 19, 0.8)),
+      to(rgba(19, 19, 19, 0.8))
+    );
+    background: -o-linear-gradient(
+      bottom,
+      rgba(19, 19, 19, 0.8),
+      rgba(19, 19, 19, 0.8)
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(19, 19, 19, 0.8),
+      rgba(19, 19, 19, 0.8)
+    );
   }
   .input-text-main {
     width: auto;
@@ -862,8 +917,8 @@ input::placeholder {
     margin-bottom: 9px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .foot-pos {
     padding-top: 44px;
@@ -889,6 +944,9 @@ input::placeholder {
 }
 
 @media (max-width: 530px) {
+  .head-line {
+    height: 21px;
+  }
   .input-style {
     max-width: 354px;
   }

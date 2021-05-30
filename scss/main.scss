@@ -684,6 +684,10 @@ input::placeholder {
 }
 
 @media (max-width: 530px) {
+  .head-line {
+    height: 21px;
+  }
+
   .input-style {
     max-width: 354px;
   }
