@@ -7,8 +7,8 @@ document.getElementById('menu').onclick = function () {
             document.getElementsByClassName('head-nav-mob')[0].style.display = 'none';
 
         }
-        setTimeout(sayTime, 500);
-        document.getElementsByClassName('head-nav-mob')[0].style.right = '-380px';
+        setTimeout(sayTime, 700);
+        document.getElementsByClassName('head-nav-mob')[0].style.right = '-680px';
 
 
     } else {

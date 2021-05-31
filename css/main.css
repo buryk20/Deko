@@ -353,12 +353,11 @@ body {
 }
 
 .head-nav-mob {
-  max-width: 375px;
   width: 100%;
   padding-left: 40px;
   padding-top: 100px;
   padding-bottom: 20px;
-  right: -380px;
+  right: -680px;
   top: 29px;
   position: absolute;
   display: none;
