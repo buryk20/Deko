@@ -357,7 +357,7 @@ body {
   padding-left: 40px;
   padding-top: 100px;
   padding-bottom: 20px;
-  right: -680px;
+  right: -1040px;
   top: 29px;
   position: absolute;
   display: none;
@@ -682,7 +682,7 @@ input::placeholder {
 }
 
 .foot-logo {
-  margin-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 .foot-wrp-icon {
